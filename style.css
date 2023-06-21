@@ -1,0 +1,368 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"); */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  /* font-family: "Kumbh Sans", sans-serif; */
+  /* outline: 1px solid red; */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #0e4bf1;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.header_menu {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  height: 80px;
+  /* border-bottom: 1px solid; */
+  box-shadow: 0px 0.5px 0 0 rgb(180, 177, 177);
+  position: relative;
+}
+
+.menu_title-pagina {
+  display: flex;
+  margin: 0 10px 0 10px;
+}
+
+.menu_container {
+  display: flex;
+  width: 70%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_container-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.menu_list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin: 0 10px 0 10px;
+}
+
+.menu_list:hover {
+  border-bottom: 3px solid orange;
+  transition: 0.2s;
+}
+
+.carrito-login {
+  width: 25%;
+  display: flex;
+  /* position: relative; */
+  justify-content: space-evenly;
+}
+
+.icon-menu {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.icon-menus {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 10000;
+}
+
+.carrito_cotenido {
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  background: rgb(255, 255, 255);
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 300px;
+  height: 200px;
+  z-index: 100;
+  box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mostrar {
+  display: flex;
+}
+
+.contenido_carrito {
+  display: flex;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.checkout {
+  background: rgb(255 125 25);
+  width: 90%;
+  margin: 0 0 10px 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.title_cart {
+  display: flex;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.line {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  box-shadow: 0px 0.5px 0 0 rgb(90, 85, 85);
+}
+
+.compras_productos {
+  height: 150px;
+  overflow: auto;
+}
+
+.img-carrito {
+  width: 35px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.contenido_carrito-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+.title_carrito-product {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.precio_product-carrito {
+  display: flex;
+  margin: 0 10px 0 0;
+}
+
+.precio_original-carrito {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.img_basura-dalate {
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.background {
+  display: flex;
+  background-image: url(./img/1333.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  margin: 5px auto;
+}
+
+.container_articulos {
+  width: 90%;
+  margin: 10px auto;
+  box-shadow: #ddd 0px 0px 19px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.title-articulos{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ultimos_articulos{
+    text-transform: uppercase;
+}
+
+.articulo{
+    background: #f0efef;
+    width: 300px;
+    height: 395px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+/* 
+.articulo:nth-child(odd){
+  background: #ed5329;
+}
+
+.articulo:nth-child(3n){
+  background: #21eff2;
+}
+
+.articulo:nth-child(even){
+  background: #21f259;
+} */
+
+.img_articulo{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: contain;
+}
+
+.btn_link-producto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 35px;
+    background: #ee3e0f;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.background_oferta{
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    height: 450px;
+    background-image: url(./img/1877.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Copyright{
+    display: flex;
+}
+
+@media (max-width: 768px) {
+  .header_menu {
+    width: 95%;
+  }
+
+  .menu_title-pagina {
+    margin-left: 50px;
+    font-size: 33px;
+  }
+
+  .menu_container {
+    height: 100vh;
+    width: 300px;
+    transform: translateX(-310px);
+    transition: 0.5s;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background: whitesmoke;
+    /* display: none; */
+  }
+
+  .mover_izq {
+    transform: translateX(-10px);
+    transition: 0.5s;
+  }
+
+  .menu_container-list {
+    flex-direction: column;
+    height: 60vh;
+    margin-top: 50px;
+  }
+
+  .menu_list {
+    height: 80px;
+  }
+
+  .carrito-login {
+    width: 60%;
+    justify-content: flex-end;
+    gap: 10px;
+    /* position: absolute; */
+    z-index: 9;
+  }
+
+  .icon-menu {
+    margin: 10px;
+    z-index: 1000;
+  }
+
+  .icon_menu {
+    display: flex;
+    margin: 10px;
+  }
+
+  .ocultar {
+    display: none;
+  }
+
+  .carrito_cotenido {
+    right: 6%;
+    width: 350px;
+    height: 250px;
+  }
+
+  .background {
+    height: 30vh;
+    width: 100%;
+  }
+
+  .background_oferta{
+   height: 260px;
+  }
+}
