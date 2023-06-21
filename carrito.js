@@ -46,6 +46,10 @@ let windowWidth = window.innerWidth;
 if (windowWidth <= 768) {
     let container_img_evento = document.querySelector(".container_product-img")
     container_img_evento.addEventListener("click", cambioImg)
+
+    carrito.addEventListener("click", () => {
+        carrito.classList.remove("mostrar")
+    })
 }
 
 btns_galery.addEventListener("click", cambioImg)
@@ -181,9 +185,9 @@ function agregrCarrito() {
 
 function sumarDisponibles() {
     agregar.forEach(eleme => {
-        let { cantidad,id } = eleme
+        let { cantidad, id } = eleme
         let cant_dispo = parseInt(document.querySelector(".disponibles_cant").textContent)
-        if(id==document.querySelector(".agregar_cantidad-product").getAttribute("data-id")){
+        if (id == document.querySelector(".agregar_cantidad-product").getAttribute("data-id")) {
             cant_dispo += cantidad;
         }
         document.querySelector(".disponibles_cant").innerHTML = cant_dispo;
@@ -192,9 +196,9 @@ function sumarDisponibles() {
 
 function restarDisponibles() {
     agregar.forEach(eleme => {
-        let { cantidad,id } = eleme
+        let { cantidad, id } = eleme
         let cant_dispo = parseInt(document.querySelector(".disponibles_cant").textContent)
-        if(id==document.querySelector(".agregar_cantidad-product").getAttribute("data-id")){
+        if (id == document.querySelector(".agregar_cantidad-product").getAttribute("data-id")) {
             cant_dispo -= cantidad;
         }
         document.querySelector(".disponibles_cant").innerHTML = cant_dispo;

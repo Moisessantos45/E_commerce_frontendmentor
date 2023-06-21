@@ -20,6 +20,13 @@ carrito.addEventListener("mouseleave", () => {
     carrito.classList.remove("mostrar")
 })
 
+let windowWidth = window.innerWidth;
+if (windowWidth <= 768) {
+    carrito.addEventListener("click", () => {
+        carrito.classList.remove("mostrar")
+    })
+}
+
 carrito_prodcutos.addEventListener("click", eliminarProducto)
 
 document.addEventListener("DOMContentLoaded", () => {
